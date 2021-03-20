@@ -6,16 +6,15 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AcceuilActivity extends AppCompatActivity {
+public class ConnexionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_acceuil);
+        setContentView(R.layout.activity_connnection);
     }
 
-
-    public void Invité(View view) {
+    public void Jouer(View view) {
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
     }

@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AcceuilActivity extends AppCompatActivity {
+public class InscriptionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,14 +14,8 @@ public class AcceuilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_acceuil);
     }
 
-
-    public void Invité(View view) {
-        Intent intent = new Intent(this, MenuActivity.class);
-        startActivity(intent);
-    }
-
-    public void Inscription(View view) {
-        Intent intent = new Intent(this, InscriptionActivity.class);
+    public void Connection(View view){
+        Intent intent = new Intent(this, ConnexionActivity.class);
         startActivity(intent);
     }
 }
