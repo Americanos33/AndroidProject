@@ -4,151 +4,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_margin="50dp"
         android:text="Theme 1"
         android:textSize="30dp"
         android:padding="10dp"
         android:textColor="@color/cardview_light_background"
-        android:background="@color/cardview_dark_background"
+        android:background="@drawable/rounded_button"
         />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn1.1"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="*"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn1.2"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="**"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn1.3"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="***"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-    </LinearLayout>
-
-    <TextView
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_margin="50dp"
         android:text="Theme 2"
         android:textSize="30dp"
         android:padding="10dp"
         android:textColor="@color/cardview_light_background"
-        android:background="@color/cardview_dark_background"
+        android:background="@drawable/rounded_button"
         />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn2.1"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="*"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn2.2"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="**"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn2.3"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="***"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-    </LinearLayout>
-
-    <TextView
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_margin="50dp"
         android:text="Theme 3"
         android:textSize="30dp"
         android:padding="10dp"
         android:textColor="@color/cardview_light_background"
-        android:background="@color/cardview_dark_background"
+        android:background="@drawable/rounded_button"
         />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn3.1"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="*"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn3.2"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="**"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Menu_btn3.3"
-            android:layout_width="46dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:text="***"
-            android:textColor="@color/cardview_light_background"
-            android:background="@color/cardview_dark_background"
-            />
-    </LinearLayout>
 
 </LinearLayout>
