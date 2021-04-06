@@ -9,11 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndoidProject">
-        <activity android:name=".AcceuilActivity"></activity>
-        <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".InscriptionActivity"></activity>
-        <activity android:name=".ConnexionActivity"></activity>
-        <activity android:name=".Paramexo"></activity>
+        <activity android:name=".Felicationexo"></activity>
+        <activity android:name=".calcul" />
+        <activity android:name=".Menuexo" />
+        <activity android:name=".AcceuilActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".InscriptionActivity" />
+        <activity android:name=".ConnexionActivity" />
+        <activity android:name=".Paramexo" />
+        <activity android:name=".Exercice5Activity" />
+        <activity android:name=".ErreurActivity" />
+        <activity android:name=".FelicitaionActivity" />
+        <activity android:name=".TableMultiplicationActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
