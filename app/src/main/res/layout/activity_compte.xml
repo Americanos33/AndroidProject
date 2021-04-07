@@ -11,22 +11,26 @@
         android:layout_margin="50dp"
         android:textSize="30dp"
         android:text="JOUER"
+        android:textColor="@color/cardview_light_background"
         android:background="@drawable/rounded_button"
         android:onClick="Jouer"
         />
 
-    <TextView
+
+    <EditText
+        android:id="@+id/CompteViewNom"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Nom"
+        android:text="NOM"
         android:textSize="30dp"
         android:padding="15dp"
         android:background="@color/cardview_dark_background"
         android:textColor="@color/cardview_light_background"
         />
-    <TextView
+    <EditText
+        android:id="@+id/CompteViewPrenom"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -37,7 +41,8 @@
         android:background="@color/cardview_dark_background"
         android:textColor="@color/cardview_light_background"
         />
-    <TextView
+    <EditText
+        android:id="@+id/CompteViewAge"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -48,7 +53,8 @@
         android:background="@color/cardview_dark_background"
         android:textColor="@color/cardview_light_background"
         />
-    <TextView
+    <EditText
+        android:id="@+id/CompteViewSexe"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -60,22 +66,33 @@
         android:textColor="@color/cardview_light_background"
         />
     <Button
+        android:id="@+id/button_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="30dp"
         android:text="EDIT"
         android:textSize="20dp"
-        android:onClick="Inscription"
+        android:onClick="Edit"
         />
 
     <TextView
+        android:id="@+id/CompteViewScores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="50dp"
         android:text="Scores:"
         android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/button_supprimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supprimer"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
         />
 
 </LinearLayout>

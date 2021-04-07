@@ -5,7 +5,8 @@
     android:orientation="vertical">
 
     <EditText
-        android:layout_width="120dp"
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
@@ -18,7 +19,8 @@
         />
 
     <EditText
-        android:layout_width="120dp"
+        android:id="@+id/editTextPrenom"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
@@ -31,7 +33,8 @@
         />
 
     <EditText
-        android:layout_width="75dp"
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
@@ -44,7 +47,8 @@
         />
 
     <EditText
-        android:layout_width="75dp"
+        android:id="@+id/editTextSexe"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
@@ -57,6 +61,7 @@
         />
 
     <Button
+        android:id="@+id/button_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
@@ -65,7 +70,6 @@
         android:layout_marginLeft="50dp"
         android:text="VALIDER"
         android:textSize="30dp"
-        android:onClick="Connection"
         />
 
 

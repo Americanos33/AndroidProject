@@ -26,7 +26,7 @@ public class AcceuilActivity extends AppCompatActivity {
     }
 
     public void Connection(View view){
-        Intent intent = new Intent(this, ConnexionActivity.class);
+        Intent intent = new Intent(this, ConnectionActivity.class);
         startActivity(intent);
     }
 }
