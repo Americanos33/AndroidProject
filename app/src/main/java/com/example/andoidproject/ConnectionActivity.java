@@ -53,8 +53,6 @@ public class ConnectionActivity extends AppCompatActivity {
 
                 // Récupération du user cliquée à l'aide de l'adapter
                 User user = adapter.getItem(position);
-                Log.e("myTag", "user : " + user);
-
 
                 // Définition du user
                 app.setUser(user);

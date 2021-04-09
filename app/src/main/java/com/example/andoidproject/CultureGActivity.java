@@ -2,13 +2,57 @@ package com.example.andoidproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import com.example.andoidproject.db.DatabaseClient;
 
 public class CultureGActivity extends AppCompatActivity {
+
+    // DATA
+    private MyApplication app;
+
+    // Buttons
+    private Button espace, capitale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_culture_g);
+
+        // Definition contexte
+        app = ((MyApplication) this.getApplication());
+
+        // Recuperation des bouttons
+        espace = findViewById(R.id.button_quizzespace);
+        capitale = findViewById(R.id.button_quizzcapitale);
+
+        // Setting OnClickListner
+        espace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Setting TAG courant
+                app.setTag("CGES");
+
+                // Redirection vue appropriée
+                Intent intent = new Intent(CultureGActivity.this, Quizzvue.class);
+                startActivity(intent);
+            }
+        });
+
+        // Setting OnClickListner
+        capitale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Setting TAG courant
+                app.setTag("CGCA");
+
+                // Redirection vue appropriée
+                Intent intent = new Intent(CultureGActivity.this, Quizzvue.class);
+                startActivity(intent);
+            }
+        });
     }
 }

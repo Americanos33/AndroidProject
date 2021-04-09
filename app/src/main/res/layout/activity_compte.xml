@@ -76,16 +76,6 @@
         android:onClick="Edit"
         />
 
-    <TextView
-        android:id="@+id/CompteViewScores"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="50dp"
-        android:text="Scores:"
-        android:textSize="30dp"
-        />
-
     <Button
         android:id="@+id/button_supprimer"
         android:layout_width="wrap_content"
@@ -93,6 +83,7 @@
         android:text="Supprimer"
         android:layout_gravity="right"
         android:layout_margin="10dp"
+        android:layout_marginTop="600dp"
         />
 
 </LinearLayout>

@@ -15,36 +15,43 @@
         android:textSize="40dp"
         android:layout_gravity="center_horizontal"/>
     <TextView
+        android:id="@+id/Question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text=""
+        android:textSize="40dp"/>
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <RadioButton android:id="@+id/Porthos1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="test1"
+            android:textSize="40dp"
             />
         <RadioButton android:id="@+id/Athos2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="test2"
+            android:textSize="40dp"
             />
         <RadioButton android:id="@+id/Aramis3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="test3"
+            android:textSize="40dp"
             />
 
     </RadioGroup>
     <Button
-        android:id="@+id/exercice1_valider"
+        android:id="@+id/exercice1_suivant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="suivant"
+        android:layout_margin="20dp"
        />
 
 </LinearLayout>

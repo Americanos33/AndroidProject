@@ -25,7 +25,7 @@ public class MyAdapter extends ArrayAdapter<User> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        // Récupération de la multiplication
+        // Récupération du User
         final User user = getItem(position);
 
         // Charge le template XML

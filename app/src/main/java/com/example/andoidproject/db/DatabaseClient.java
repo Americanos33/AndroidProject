@@ -22,7 +22,7 @@ public class DatabaseClient {
         // Créer l'objet représentant la base de données de votre application
         // à l'aide du "Room database builder"
         // MyToDos est le nom de la base de données
-        appDatabase = Room.databaseBuilder(context, AppDatabase.class, "MyToDos").build();
+        appDatabase = Room.databaseBuilder(context, AppDatabase.class, "MyUsers").addCallback(roomDatabaseCallback).build();
 
         ////////// REMPLIR LA BD à la première création à l'aide de l'objet roomDatabaseCallback
         // Ajout de la méthode addCallback permettant de populate (remplir) la base de données à sa création
@@ -51,9 +51,17 @@ public class DatabaseClient {
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
 
-            //
-            db.execSQL("INSERT INTO task (task, description) VALUES(\"tâche 1\", \"installer la librairie Room\");");
-            db.execSQL("INSERT INTO task (task, description) VALUES(\"tâche 2\", \" Créer DatabaseClient\");");
+            // Definition des questions
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 1\",\"Reponse 1\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 2\",\"Reponse 2\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 3\",\"Reponse 3\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 4\",\"Reponse 4\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 5\",\"Reponse 5\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 6\",\"Reponse 6\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 7\",\"Reponse 7\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 8\",\"Reponse 8\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 9\",\"Reponse 9\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Question 10\",\"Reponse 10\");");
 
         }
     };

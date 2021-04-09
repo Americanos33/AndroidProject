@@ -7,12 +7,14 @@
     tools:context=".CultureGActivity"
     android:orientation="vertical">
     <Button
+        android:id="@+id/button_quizzespace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quizz:Espace"
         android:layout_gravity="center"
         android:layout_marginTop="150dp"/>
     <Button
+        android:id="@+id/button_quizzcapitale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quizz:Capitale"

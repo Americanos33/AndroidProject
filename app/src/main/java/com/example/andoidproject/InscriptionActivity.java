@@ -125,4 +125,24 @@ public class InscriptionActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ConnectionActivity.class);
         startActivity(intent);
     }
+
+    public void noTextNom(View view){
+        EditText t = findViewById(R.id.editTextNom);
+        t.getText().clear();
+    }
+
+    public void noTextPrenom(View view){
+        EditText t = findViewById(R.id.editTextPrenom);
+        t.getText().clear();
+    }
+
+    public void noTextAge(View view){
+        EditText t = findViewById(R.id.editTextAge);
+        t.getText().clear();
+    }
+
+    public void noTextSexe(View view){
+        EditText t = findViewById(R.id.editTextSexe);
+        t.getText().clear();
+    }
 }

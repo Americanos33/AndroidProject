@@ -25,9 +25,6 @@ public class User implements Serializable {
     @ColumnInfo(name = "sexe")
     private String sexe;
 
-    /*@ColumnInfo(name = "high_scores")
-    private String[] high_scores;*/
-
     /*
      * Getters and Setters
      * */
@@ -52,10 +49,6 @@ public class User implements Serializable {
         return sexe;
     }
 
-    /*public String[] getHigh_scores() {
-        return high_scores;
-    }*/
-
     public void setId(int id) {
         this.id = id;
     }
@@ -76,7 +69,4 @@ public class User implements Serializable {
         this.sexe = sexe;
     }
 
-    /*public void setHigh_scores(String[] high_scores) {
-        this.high_scores = high_scores;
-    }*/
 }

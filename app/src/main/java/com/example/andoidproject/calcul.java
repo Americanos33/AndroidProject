@@ -78,7 +78,7 @@ public class calcul extends AppCompatActivity {
                     cntrepj++;
                 }
                 Intent intent = new Intent(calcul.this, Felicationexo.class);
-                intent.putExtra(Felicationexo.ERREUR_KEY, cntrepj);
+                intent.putExtra(Felicationexo.SCORE_KEY, cntrepj);
                 startActivity(intent);
             }
         }
