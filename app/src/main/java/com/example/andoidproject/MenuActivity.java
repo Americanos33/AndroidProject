@@ -13,8 +13,13 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
     }
-    public void Continuer(View view) {
+    public void MATH(View view) {
         Intent intent = new Intent(MenuActivity.this, Menuexo.class);
         startActivity(intent);
     }
+    public void CULTUREG(View view) {
+        Intent intent = new Intent(MenuActivity.this, CultureGActivity.class);
+        startActivity(intent);
+    }
+
 }

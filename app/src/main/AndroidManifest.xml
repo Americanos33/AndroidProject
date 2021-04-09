@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndoidProject">
-        <activity android:name=".Felicationexo"></activity>
+        <activity android:name=".Quizzvue"></activity>
+        <activity android:name=".CultureGActivity" />
+        <activity android:name=".Felicationexo" />
         <activity android:name=".calcul" />
         <activity android:name=".Menuexo" />
         <activity android:name=".AcceuilActivity" />
@@ -21,8 +23,8 @@
         <activity android:name=".ErreurActivity" />
         <activity android:name=".FelicitaionActivity" />
         <activity android:name=".TableMultiplicationActivity2" />
-        <activity android:name=".CompteActivity"></activity>
-        <activity android:name=".ConnectionActivity"></activity>
+        <activity android:name=".CompteActivity" />
+        <activity android:name=".ConnectionActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

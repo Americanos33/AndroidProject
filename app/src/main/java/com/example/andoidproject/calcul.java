@@ -38,6 +38,7 @@ public class calcul extends AppCompatActivity {
         cnt++;
 
 
+
     }
     public void opesuiv(View view) {
         TextView calc = findViewById(R.id.calcul);
@@ -65,9 +66,7 @@ public class calcul extends AppCompatActivity {
                     cntrepj++;
                 }
                 resinp.setText("");
-                if (reponses.size()>=10){
-                    resinp.setText(String.valueOf(reponses.get(cnt)));
-                }
+
                 btnp.setText("Precedent");
                 cnt++;
 
@@ -90,6 +89,7 @@ public class calcul extends AppCompatActivity {
         Button btn = findViewById(R.id.btnprec);
         TextView textcnt = findViewById(R.id.cnt);
         if (cnt-1==0){
+            reponses.clear();
             super.finish();
             cntrepj=0;
         }
@@ -106,6 +106,7 @@ public class calcul extends AppCompatActivity {
         else if (cnt > 1 && cnt!=operation.getOperations().size()){
             calc.setText(operation.getOperations().get(cnt-2).getOp1() + operation.getOperations().get(cnt-2).getOperande() + operation.getOperations().get(cnt-2).getOp2());
             resinp.setText(String.valueOf(reponses.get(cnt-2)));
+            reponses.remove(reponses.get(reponses.size()-1));
             if (cntrepj<=0){
                 cntrepj=0;
             }else {
