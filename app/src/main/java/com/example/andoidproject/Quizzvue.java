@@ -36,7 +36,7 @@ public class Quizzvue extends AppCompatActivity {
 
     private String tag, mauvaiseRep1, mauvaiseRep2;
 
-    private TextView questionText;
+    private TextView questionText, compteur;
 
     private Integer score, pos, nbquestions;
 
@@ -50,7 +50,7 @@ public class Quizzvue extends AppCompatActivity {
         tag = app.getTag();
         seenQuestionsList = new ArrayList<>();
         question = new Question();
-        nbquestions = 0;
+        nbquestions = 1;
         score = 0;
 
         // Récupération du DatabaseClient
@@ -63,6 +63,8 @@ public class Quizzvue extends AppCompatActivity {
         questionText = findViewById(R.id.Question);
         goNext = findViewById(R.id.exercice1_suivant);
         radioGroup = findViewById(R.id.radio_group);
+        compteur = findViewById(R.id.cnt);
+        compteur.setText("1/10");
 
         // Binding OnClick to method CreationQuestion
         goNext.setOnClickListener(new View.OnClickListener() {
@@ -83,8 +85,13 @@ public class Quizzvue extends AppCompatActivity {
                     }
                 }
 
-                if (nbquestions < 10 ){
+                if (nbquestions < 11 ){
+                    // Setting du texte du compteur
+                    compteur.setText(nbquestions + "/10");
+
+                    // Uncheck des radio bouttons
                     radioGroup.clearCheck();
+
                     // Nouvelle question
                     CreationQuestion();
                 } else {
