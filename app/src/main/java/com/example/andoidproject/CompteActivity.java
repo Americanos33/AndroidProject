@@ -54,7 +54,6 @@ public class CompteActivity extends AppCompatActivity {
 
         // Recuperation du user
         user = ((MyApplication) CompteActivity.this.getApplication()).getUser();
-        Toast.makeText(CompteActivity.this, "user : " + user, Toast.LENGTH_SHORT).show();
 
         // Modification du texte
         Nom.setText(user.getNom());

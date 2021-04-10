@@ -70,6 +70,9 @@ public class Quizzvue extends AppCompatActivity {
         goNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Boolean de verification
+                Boolean verif = true;
+
                 // Verification des reponses
                 if (b1.isChecked()){
                     if (pos == 1){
@@ -83,17 +86,21 @@ public class Quizzvue extends AppCompatActivity {
                     if (pos == 3){
                         score += 1;
                     }
+                } else {
+                    verif = false;
                 }
 
-                if (nbquestions < 11 ){
-                    // Setting du texte du compteur
-                    compteur.setText(nbquestions + "/10");
+                if (!verif) {
+                    Toast.makeText(Quizzvue.this, "Il faut choisir une réponse !", Toast.LENGTH_SHORT).show();
+                } else if (nbquestions < 11 ){
+                        // Setting du texte du compteur
+                        compteur.setText(nbquestions + "/10");
 
-                    // Uncheck des radio bouttons
-                    radioGroup.clearCheck();
+                        // Uncheck des radio bouttons
+                        radioGroup.clearCheck();
 
-                    // Nouvelle question
-                    CreationQuestion();
+                        // Nouvelle question
+                        CreationQuestion();
                 } else {
                     Intent intent = new Intent(Quizzvue.this, Felicationexo.class);
                     intent.putExtra(Felicationexo.SCORE_KEY, score);
