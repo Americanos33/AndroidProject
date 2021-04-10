@@ -36,9 +36,6 @@ public class calcul extends AppCompatActivity {
         calc.setText(operation.getOperations().get(0).getOp1() + operation.getOperations().get(0).getOperande() + operation.getOperations().get(0).getOp2());
         textcnt.setText(cnt+1 +"/10");
         cnt++;
-
-
-
     }
     public void opesuiv(View view) {
         TextView calc = findViewById(R.id.calcul);
