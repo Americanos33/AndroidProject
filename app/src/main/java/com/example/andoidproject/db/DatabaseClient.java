@@ -62,7 +62,7 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Qui n'est pas une planète ?\",\"La Lune\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quel planète est aussi grosse que la Terre ?  ?\",\"Vénus\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quel planète prends 164 ans pour tourner autour du Soleil ?\",\"Neptune\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quel planète est incliné à 90° sur son axe de rotation ?\",\"Le Caire\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quel planète est incliné à 90° sur son axe de rotation ?\",\"Uranus\");");
 
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de Japon ?\",\"Tokyo\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de la Russie ?\",\"Moscou\");");

@@ -21,8 +21,8 @@ public interface QuestionDao {
             "LIMIT 1")
     Question getQuestionRandomByTag(String tag, List<String> questions);
 
-    @Query("SELECT reponse FROM question WHERE questiontext != :question AND reponse != :otherRep ORDER BY RANDOM() LIMIT 1")
-    String getFalseAnswersByQuestion(String question, String otherRep);
+    @Query("SELECT reponse FROM question WHERE questiontext != :question AND tag = :tag AND reponse != :otherRep ORDER BY RANDOM() LIMIT 1")
+    String getFalseAnswersByQuestion(String question, String tag, String otherRep);
 
     @Insert
     void insert(Question question);

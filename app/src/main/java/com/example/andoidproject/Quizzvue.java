@@ -153,9 +153,12 @@ public class Quizzvue extends AppCompatActivity {
 
             @Override
             protected Void doInBackground(Void... voids) {
+                // recuperation tag courant
+                String tag = app.getTag();
+
                 // recuperation de deux mauvaises reponses
-                mauvaiseRep1 = mDb.getAppDatabase().questionDao().getFalseAnswersByQuestion(q.getQuestiontext(), "");
-                mauvaiseRep2 = mDb.getAppDatabase().questionDao().getFalseAnswersByQuestion(q.getQuestiontext(), mauvaiseRep1);
+                mauvaiseRep1 = mDb.getAppDatabase().questionDao().getFalseAnswersByQuestion(q.getQuestiontext(), tag, "");
+                mauvaiseRep2 = mDb.getAppDatabase().questionDao().getFalseAnswersByQuestion(q.getQuestiontext(), tag, mauvaiseRep1);
 
                 // Random entre 1 et 3 pour determiner l'emplacement de la bonne reponse
                 int i = ThreadLocalRandom.current().nextInt(1, 4);
