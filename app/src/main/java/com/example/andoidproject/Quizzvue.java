@@ -32,8 +32,6 @@ public class Quizzvue extends AppCompatActivity {
     private RadioGroup radioGroup;
     private Button goNext;
 
-    private Question question;
-
     private String tag, mauvaiseRep1, mauvaiseRep2;
 
     private TextView questionText, compteur;
@@ -49,7 +47,6 @@ public class Quizzvue extends AppCompatActivity {
         app = ((MyApplication) this.getApplication());
         tag = app.getTag();
         seenQuestionsList = new ArrayList<>();
-        question = new Question();
         nbquestions = 1;
         score = 0;
 

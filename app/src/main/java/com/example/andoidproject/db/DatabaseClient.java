@@ -60,20 +60,20 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle est la plus grosse planète du système solaire ?\",\"Jupiter\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète surnomme-t-on la planète bleu ?\",\"La Terre\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Qui n'est pas une planète ?\",\"La Lune\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quel planète est aussi grosse que la Terre ?  ?\",\"Vénus\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quel planète prends 164 ans pour tourner autour du Soleil ?\",\"Neptune\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quel planète est incliné à 90° sur son axe de rotation ?\",\"Uranus\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète est aussi grosse que la Terre ?  ?\",\"Vénus\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète prends 164 ans pour tourner autour du Soleil ?\",\"Neptune\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète est incliné à 90° sur son axe de rotation ?\",\"Uranus\");");
 
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de Japon ?\",\"Tokyo\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de la Russie ?\",\"Moscou\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de la France ?\",\"Paris\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale du l'Angleterre ?\",\"Londres\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale des États-Unis ?\",\"Washington\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale du Viêt Nam ?\",\"Hanoi\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de l'Espagne ?\",\"Madrid\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de  l'Australie ?\",\"Canberra\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de l'Argentine ?\",\"Buenos Aires\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"quel est la capitale de l'Égypte ?\",\"Le Caire\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de Japon ?\",\"Tokyo\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de la Russie ?\",\"Moscou\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de la France ?\",\"Paris\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale du l'Angleterre ?\",\"Londres\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale des États-Unis ?\",\"Washington\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale du Viêt Nam ?\",\"Hanoi\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de l'Espagne ?\",\"Madrid\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de  l'Australie ?\",\"Canberra\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de l'Argentine ?\",\"Buenos Aires\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de l'Égypte ?\",\"Le Caire\");");
 
 
 
