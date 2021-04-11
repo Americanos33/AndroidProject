@@ -36,10 +36,10 @@ public class Felicationexo extends AppCompatActivity {
     }
     public void pagexo(View view){
 
-        if (myapp.getTag() != null) {
+        if (myapp.getTag() == "CGES" || myapp.getTag() == "CGCA") {
             Intent intent = new Intent(this, Quizzvue.class);
             startActivity(intent);
-        } else {
+        } else if (myapp.getTag() == "MAMU" || myapp.getTag() == "MACA") {
             Intent intent = new Intent(this, Paramexo.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
@@ -47,13 +47,19 @@ public class Felicationexo extends AppCompatActivity {
     }
     public void pagemenu(View view){
 
-        if (myapp.getTag() != null) {
+        if (myapp.getTag() == "CGES" || myapp.getTag() == "CGCA") {
             Intent intent = new Intent(this, CultureGActivity.class);
             startActivity(intent);
-        } else {
+        } else if (myapp.getTag() == "MAMU" || myapp.getTag() == "MACA") {
             Intent intent = new Intent(this, Menuexo.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
+    }
+
+    public void pagetheme(View view) {
+        Intent intent = new Intent(this, MenuActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 }

@@ -24,9 +24,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Retourner aux exercices"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:onClick="home"
+            />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Changer de theme"
+            android:layout_marginTop="50dp"
+            android:onClick="changertheme"
             />
 
     </LinearLayout>

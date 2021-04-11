@@ -35,4 +35,9 @@
         android:layout_height="wrap_content"
         android:text="Menu"
         android:onClick="pagemenu"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changer de theme"
+        android:onClick="pagetheme"/>
 </LinearLayout>

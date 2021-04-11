@@ -99,6 +99,8 @@ public class Quizzvue extends AppCompatActivity {
                         // Nouvelle question
                         CreationQuestion();
                 } else {
+                    setResult(RESULT_OK);
+                    finish();
                     Intent intent = new Intent(Quizzvue.this, Felicationexo.class);
                     intent.putExtra(Felicationexo.SCORE_KEY, score);
                     startActivity(intent);
@@ -133,8 +135,16 @@ public class Quizzvue extends AppCompatActivity {
                 // Setting the seenQuestionList with the question
                 seenQuestionsList.add(q.getQuestiontext());
 
-                // Modifying the view with the question settings
-                questionText.setText(q.getQuestiontext());
+                runOnUiThread(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        // Modifying the view with the question settings
+                        questionText.setText(q.getQuestiontext());
+
+                    }
+                });
 
                 mauvaisesRep(q);
 
