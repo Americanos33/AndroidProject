@@ -15,7 +15,7 @@ public class FelicitationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_felicitaion);
     }
     public void changertable(View view){
-        Intent intent = new Intent(this, TableMultiplicationActivity.class);
+        Intent intent = new Intent(this, ExerciceMultiplicationActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

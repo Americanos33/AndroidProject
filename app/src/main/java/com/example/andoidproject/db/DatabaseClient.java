@@ -60,7 +60,7 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle est la plus grosse planète du système solaire ?\",\"Jupiter\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète surnomme-t-on la planète bleu ?\",\"La Terre\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Qui n'est pas une planète ?\",\"La Lune\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète est aussi grosse que la Terre ?  ?\",\"Vénus\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète est aussi grosse que la Terre ?\",\"Vénus\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète prends 164 ans pour tourner autour du Soleil ?\",\"Neptune\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGES\",\"Quelle planète est incliné à 90° sur son axe de rotation ?\",\"Uranus\");");
 

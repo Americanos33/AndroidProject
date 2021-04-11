@@ -67,11 +67,17 @@ public class TableMultiplicationActivity extends AppCompatActivity {
        }
        if (chk==false){
        if (cnt>0){
+           setResult(RESULT_OK);
+           finish();
+
            Intent intent = new Intent(this, ErreurActivity.class);
            intent.putExtra(ErreurActivity.RES_KEY, cnt);
            startActivity(intent);
        }
        else {
+           setResult(RESULT_OK);
+           finish();
+
            Intent intent = new Intent(this, FelicitationActivity.class);
            startActivity(intent);
        }

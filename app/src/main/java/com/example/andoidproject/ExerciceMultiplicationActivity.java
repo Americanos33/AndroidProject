@@ -19,6 +19,10 @@ public class ExerciceMultiplicationActivity extends AppCompatActivity {
     public void tabvalider(View view){
         NumberPicker numpck = findViewById(R.id.numpick);
         int table = numpck.getValue();
+
+        setResult(RESULT_OK);
+        finish();
+
         Intent intent = new Intent(this, TableMultiplicationActivity.class);
         intent.putExtra(TableMultiplicationActivity.TAB_KEY, table);
         startActivity(intent);
