@@ -14,7 +14,7 @@ public class FrancaisActivity extends AppCompatActivity {
     private MyApplication app;
 
     // Buttons
-    private Button grammaire, conjugaison, helpGrammaire, helpConjugaison;
+    private Button PPF, BA, helpPPF, helpBA;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +25,13 @@ public class FrancaisActivity extends AppCompatActivity {
         app = ((MyApplication) this.getApplication());
 
         // Recuperation des elements de la vue
-        grammaire = findViewById(R.id.button_quizzgrammaire);
-        conjugaison = findViewById(R.id.button_quizzconjugaison);
-        helpGrammaire = findViewById(R.id.button_help_grammaire);
-        helpConjugaison = findViewById(R.id.button_help_conjugaison);
+        PPF = findViewById(R.id.button_quizzPPF);
+        BA = findViewById(R.id.button_quizzBA);
+        helpPPF = findViewById(R.id.button_help_PPF);
+        helpBA = findViewById(R.id.button_help_BA);
 
         // Setting des OnClickListener
-        grammaire.setOnClickListener(new View.OnClickListener() {
+        PPF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Definition du tag courant
@@ -43,7 +43,7 @@ public class FrancaisActivity extends AppCompatActivity {
             }
         });
 
-        conjugaison.setOnClickListener(new View.OnClickListener() {
+        BA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Definition du tag courant
@@ -55,21 +55,21 @@ public class FrancaisActivity extends AppCompatActivity {
             }
         });
 
-        helpGrammaire.setOnClickListener(new View.OnClickListener() {
+        helpPPF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 new AlertDialog.Builder(FrancaisActivity.this)
-                        .setMessage("Une suite de question concernant la grammaire")
+                        .setMessage("Une suite de question concernant les temps de conjugaison")
                         .setPositiveButton("OK", null)
                         .show();
             }
         });
 
-        helpConjugaison.setOnClickListener(new View.OnClickListener() {
+        helpBA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 new AlertDialog.Builder(FrancaisActivity.this)
-                        .setMessage("Une suite de question concernant la conjugaison")
+                        .setMessage("Une suite de question concernant les adjectifs")
                         .setPositiveButton("OK", null)
                         .show();
             }

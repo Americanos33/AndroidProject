@@ -12,14 +12,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_quizzgrammaire"
+            android:id="@+id/button_quizzPPF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quizz:Grammaire"
+            android:text="Quizz:Passé, Présent, Futur"
             android:layout_gravity="center" />
 
         <Button
-            android:id="@+id/button_help_grammaire"
+            android:id="@+id/button_help_PPF"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:text="\?"
@@ -35,14 +35,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_quizzconjugaison"
+            android:id="@+id/button_quizzBA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quizz:Conjugaison"
+            android:text="Quizz:Bon Adjectif"
             android:layout_gravity="center" />
 
         <Button
-            android:id="@+id/button_help_conjugaison"
+            android:id="@+id/button_help_BA"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:text="\?"

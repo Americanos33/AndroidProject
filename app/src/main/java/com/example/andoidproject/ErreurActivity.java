@@ -17,12 +17,19 @@ public class ErreurActivity extends AppCompatActivity {
         TextView err = findViewById(R.id.nberr);
         err.setText(String.valueOf(numtab));
     }
+
     public void changer(View view){
         super.finish();
     }
+
     public void changertable(View view){
         Intent intent = new Intent(this, TableMultiplicationActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void changertheme(View view) {
+        Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
     }
 }

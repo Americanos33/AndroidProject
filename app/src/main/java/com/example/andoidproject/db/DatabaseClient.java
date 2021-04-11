@@ -77,7 +77,7 @@ public class DatabaseClient {
 
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., j'ai bien mangé !.\",\"A midi\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., il fera beau.\",\"Après demain\");");
-            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., j’ai acheté ce piolet.\",\"Hier\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., j’ai acheté ce pistolet.\",\"Hier\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., la montagne sera toujours aussi belle !?\",\"Dans un siècle\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., Charlemagne iventat l'école\",\"Au Moyen Âge\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., je pourrais me rendre chez mamie\",\"Bientôt\");");
