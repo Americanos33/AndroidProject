@@ -41,6 +41,7 @@
         android:padding="10dp"
         android:textColor="@color/cardview_light_background"
         android:background="@drawable/rounded_button"
+        android:onClick="FRANCAIS"
         />
 
 </LinearLayout>

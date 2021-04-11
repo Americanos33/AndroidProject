@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndoidProject">
+        <activity android:name=".FrancaisActivity"/>
         <activity android:name=".QuizzvueActivity"></activity>
         <activity android:name=".CultureGActivity" />
         <activity android:name=".FelicitationExoActivity" />

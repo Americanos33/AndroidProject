@@ -13,12 +13,19 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
     }
+
     public void MATH(View view) {
         Intent intent = new Intent(MenuActivity.this, MenuexoActivity.class);
         startActivity(intent);
     }
+
     public void CULTUREG(View view) {
         Intent intent = new Intent(MenuActivity.this, CultureGActivity.class);
+        startActivity(intent);
+    }
+
+    public void FRANCAIS(View view){
+        Intent intent = new Intent(MenuActivity.this, FrancaisActivity.class);
         startActivity(intent);
     }
 
