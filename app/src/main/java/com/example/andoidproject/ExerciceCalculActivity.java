@@ -25,6 +25,7 @@ public class ExerciceCalculActivity extends AppCompatActivity {
     private boolean istimer;
     int cnt;
     int cntrepj;
+    CountDownTimer t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -33,13 +34,12 @@ public class ExerciceCalculActivity extends AppCompatActivity {
 
         TextView timer = findViewById(R.id.timer);
 
-
          istimer = getIntent().getBooleanExtra(TIMER,false);
         int Maxop1 =getIntent().getIntegerArrayListExtra(DIZAINES).get(0);
         int Maxop2 =getIntent().getIntegerArrayListExtra(DIZAINES).get(1);
         if (istimer== true){
             operation = new TableOperation(getIntent().getStringArrayListExtra(PARAMETERS),Maxop1,Maxop2,true);
-              new CountDownTimer(30000, 1000) {
+            t = new CountDownTimer(30000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 timer.setText( millisUntilFinished / 1000 + "secondes" );
@@ -65,6 +65,8 @@ public class ExerciceCalculActivity extends AppCompatActivity {
         calc.setText(operation.getOperations().get(0).getOp1() + operation.getOperations().get(0).getOperande() + operation.getOperations().get(0).getOp2());
         if (!istimer){
             textcnt.setText(cnt+1 +"/10");
+        } else {
+            textcnt.setText("");
         }
 
         cnt++;
@@ -156,6 +158,17 @@ public class ExerciceCalculActivity extends AppCompatActivity {
             cnt--;
 
         }
+    }
+
+    @Override
+    public void onBackPressed(){
+        // Reset du timer
+        t.cancel();
+        t = null;
+
+        // Sortie de l'activite
+        setResult(RESULT_OK);
+        finish();
     }
 
 }
