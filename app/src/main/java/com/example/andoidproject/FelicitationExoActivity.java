@@ -34,7 +34,7 @@ public class FelicitationExoActivity extends AppCompatActivity {
     }
     public void pagexo(View view){
 
-        if (myapp.getTag() == "CGES" || myapp.getTag() == "CGCA") {
+        if (myapp.getTag() == "CGES" || myapp.getTag() == "CGCA" || myapp.getTag() == "FRCO" || myapp.getTag() == "FRGR") {
             Intent intent = new Intent(this, QuizzvueActivity.class);
             startActivity(intent);
         } else if (myapp.getTag() == "MAMU" || myapp.getTag() == "MACA") {
@@ -45,7 +45,7 @@ public class FelicitationExoActivity extends AppCompatActivity {
     }
     public void pagemenu(View view){
 
-        if (myapp.getTag() == "CGES" || myapp.getTag() == "CGCA") {
+        if (myapp.getTag() == "CGES" || myapp.getTag() == "CGCA" || myapp.getTag() == "FRCO" || myapp.getTag() == "FRGR") {
             Intent intent = new Intent(this, CultureGActivity.class);
             startActivity(intent);
         } else if (myapp.getTag() == "MAMU" || myapp.getTag() == "MACA") {

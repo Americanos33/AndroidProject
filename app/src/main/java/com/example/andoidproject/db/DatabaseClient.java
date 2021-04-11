@@ -75,9 +75,27 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de l'Argentine ?\",\"Buenos Aires\");");
             db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"CGCA\",\"Quelle est la capitale de l'Égypte ?\",\"Le Caire\");");
 
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., j'ai bien mangé !.\",\"A midi\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., il fera beau.\",\"Après demain\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., j’ai acheté ce pistolet.\",\"Hier\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., la montagne sera toujours aussi belle !?\",\"Dans un siècle\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., Charlemagne iventat l'école\",\"Au Moyen Âge\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., je pourrais me rendre chez mamie\",\"Bientôt\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., les ecoliers ecrivaient à la plume\",\"Autrefois\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., les adolescents sont rivés sur leur smartphone\",\"De nos jours\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., c'est l'automne .\",\"En ce moment\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRGR\",\"..., mon frère joue au foot\",\"Tous les samedi\");");
 
-
-
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Des herbes\",\"hautes\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Un arbre\",\"taillé\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Une clôture\",\"basse\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Un chemin\",\"étroit\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Des pommes \",\"mûres\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Un caillou\",\"lisse\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Une fleur\",\"bleue\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Des oiseaux\",\"multicolores\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Un sapin \",\"touffu\");");
+            db.execSQL("INSERT INTO question (tag, questiontext, reponse) VALUES(\"FRCO\",\"Un garçon\",\"gentil\");");
 
 
 
