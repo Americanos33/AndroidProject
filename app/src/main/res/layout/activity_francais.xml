@@ -4,19 +4,50 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_quizzgrammaire"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quizz:Grammaire"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"/>
-    <Button
-        android:id="@+id/button_quizzconjugaison"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_quizzgrammaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quizz:Grammaire"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/button_help_grammaire"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="\?"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quizz:Conjugaison"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_quizzconjugaison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quizz:Conjugaison"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/button_help_conjugaison"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="\?"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
