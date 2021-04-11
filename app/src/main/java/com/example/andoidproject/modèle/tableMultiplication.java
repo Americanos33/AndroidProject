@@ -1,4 +1,4 @@
-package com.example.andoidproject;
+package com.example.andoidproject.modèle;
 
 import java.util.ArrayList;
 
@@ -8,16 +8,7 @@ public class tableMultiplication {
 
     public tableMultiplication(int table) {
         this.table = table;
-
         initable();
-    }
-
-    public int getTable() {
-        return table;
-    }
-
-    public void setTable(int table) {
-        this.table = table;
     }
 
     public void initable(){

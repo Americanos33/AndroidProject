@@ -12,7 +12,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TableMultiplicationActivity2 extends AppCompatActivity {
+import com.example.andoidproject.modèle.Multiplication;
+import com.example.andoidproject.modèle.tableMultiplication;
+
+public class TableMultiplicationActivity extends AppCompatActivity {
     public static final String TAB_KEY = "table_key";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +72,7 @@ public class TableMultiplicationActivity2 extends AppCompatActivity {
            startActivity(intent);
        }
        else {
-           Intent intent = new Intent(this, FelicitaionActivity.class);
+           Intent intent = new Intent(this, FelicitationActivity.class);
            startActivity(intent);
        }
 

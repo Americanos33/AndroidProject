@@ -11,9 +11,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.andoidproject.modèle.TableOperation;
+
 import java.util.ArrayList;
 
-public class calcul extends AppCompatActivity {
+public class ExerciceCalculActivity extends AppCompatActivity {
     public static final String PARAMETERS="parameter_key";
     public static final String DIZAINES="dizaines_key";
     private ArrayList<Integer> reponses = new ArrayList<>();
@@ -74,8 +76,8 @@ public class calcul extends AppCompatActivity {
                 if (reponses.get(cnt-1)==operation.getOperations().get(cnt - 1).resultat()){
                     cntrepj++;
                 }
-                Intent intent = new Intent(calcul.this, Felicationexo.class);
-                intent.putExtra(Felicationexo.SCORE_KEY, cntrepj);
+                Intent intent = new Intent(ExerciceCalculActivity.this, FelicitationExoActivity.class);
+                intent.putExtra(FelicitationExoActivity.SCORE_KEY, cntrepj);
                 startActivity(intent);
             }
         }

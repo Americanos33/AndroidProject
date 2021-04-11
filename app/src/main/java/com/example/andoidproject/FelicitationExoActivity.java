@@ -7,9 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-public class Felicationexo extends AppCompatActivity {
+public class FelicitationExoActivity extends AppCompatActivity {
 
     public static final String SCORE_KEY = "bonnerep_key";
 
@@ -37,10 +35,10 @@ public class Felicationexo extends AppCompatActivity {
     public void pagexo(View view){
 
         if (myapp.getTag() == "CGES" || myapp.getTag() == "CGCA") {
-            Intent intent = new Intent(this, Quizzvue.class);
+            Intent intent = new Intent(this, QuizzvueActivity.class);
             startActivity(intent);
         } else if (myapp.getTag() == "MAMU" || myapp.getTag() == "MACA") {
-            Intent intent = new Intent(this, Paramexo.class);
+            Intent intent = new Intent(this, ParamexoActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
@@ -51,7 +49,7 @@ public class Felicationexo extends AppCompatActivity {
             Intent intent = new Intent(this, CultureGActivity.class);
             startActivity(intent);
         } else if (myapp.getTag() == "MAMU" || myapp.getTag() == "MACA") {
-            Intent intent = new Intent(this, Menuexo.class);
+            Intent intent = new Intent(this, MenuexoActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FelicitaionActivity extends AppCompatActivity {
+public class FelicitationActivity extends AppCompatActivity {
     public static final String RES_KEY = "res_key";
 
     @Override
@@ -15,12 +15,12 @@ public class FelicitaionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_felicitaion);
     }
     public void changertable(View view){
-        Intent intent = new Intent(this, Exercice5Activity.class);
+        Intent intent = new Intent(this, TableMultiplicationActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
     public void home(View view){
-        Intent intent = new Intent(this, Menuexo.class);
+        Intent intent = new Intent(this, MenuexoActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

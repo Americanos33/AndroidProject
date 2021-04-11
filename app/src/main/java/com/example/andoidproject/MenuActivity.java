@@ -14,7 +14,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
     }
     public void MATH(View view) {
-        Intent intent = new Intent(MenuActivity.this, Menuexo.class);
+        Intent intent = new Intent(MenuActivity.this, MenuexoActivity.class);
         startActivity(intent);
     }
     public void CULTUREG(View view) {

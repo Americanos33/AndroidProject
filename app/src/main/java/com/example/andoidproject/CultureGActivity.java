@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.andoidproject.db.DatabaseClient;
-
 public class CultureGActivity extends AppCompatActivity {
 
     // DATA
@@ -37,7 +35,7 @@ public class CultureGActivity extends AppCompatActivity {
                 app.setTag("CGES");
 
                 // Redirection vue appropriée
-                Intent intent = new Intent(CultureGActivity.this, Quizzvue.class);
+                Intent intent = new Intent(CultureGActivity.this, QuizzvueActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +48,7 @@ public class CultureGActivity extends AppCompatActivity {
                 app.setTag("CGCA");
 
                 // Redirection vue appropriée
-                Intent intent = new Intent(CultureGActivity.this, Quizzvue.class);
+                Intent intent = new Intent(CultureGActivity.this, QuizzvueActivity.class);
                 startActivity(intent);
             }
         });

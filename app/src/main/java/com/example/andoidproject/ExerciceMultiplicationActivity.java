@@ -7,7 +7,7 @@ import android.widget.NumberPicker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Exercice5Activity extends AppCompatActivity {
+public class ExerciceMultiplicationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +19,8 @@ public class Exercice5Activity extends AppCompatActivity {
     public void tabvalider(View view){
         NumberPicker numpck = findViewById(R.id.numpick);
         int table = numpck.getValue();
-        Intent intent = new Intent(this, TableMultiplicationActivity2.class);
-        intent.putExtra(TableMultiplicationActivity2.TAB_KEY, table);
+        Intent intent = new Intent(this, TableMultiplicationActivity.class);
+        intent.putExtra(TableMultiplicationActivity.TAB_KEY, table);
         startActivity(intent);
     }
 }

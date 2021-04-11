@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -19,7 +18,7 @@ import com.example.andoidproject.db.Question;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Quizzvue extends AppCompatActivity {
+public class QuizzvueActivity extends AppCompatActivity {
 
     // DATA
     private DatabaseClient mDb;
@@ -88,7 +87,7 @@ public class Quizzvue extends AppCompatActivity {
                 }
 
                 if (!verif) {
-                    Toast.makeText(Quizzvue.this, "Il faut choisir une réponse !", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QuizzvueActivity.this, "Il faut choisir une réponse !", Toast.LENGTH_SHORT).show();
                 } else if (nbquestions < 11 ){
                         // Setting du texte du compteur
                         compteur.setText(nbquestions + "/10");
@@ -101,8 +100,8 @@ public class Quizzvue extends AppCompatActivity {
                 } else {
                     setResult(RESULT_OK);
                     finish();
-                    Intent intent = new Intent(Quizzvue.this, Felicationexo.class);
-                    intent.putExtra(Felicationexo.SCORE_KEY, score);
+                    Intent intent = new Intent(QuizzvueActivity.this, FelicitationExoActivity.class);
+                    intent.putExtra(FelicitationExoActivity.SCORE_KEY, score);
                     startActivity(intent);
                 }
             }

@@ -1,7 +1,6 @@
-package com.example.andoidproject;
+package com.example.andoidproject.modèle;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class TableOperation {
     private ArrayList<operation> operations = new ArrayList<>();

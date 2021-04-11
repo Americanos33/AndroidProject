@@ -1,4 +1,4 @@
-package com.example.andoidproject;
+package com.example.andoidproject.modèle;
 
 import java.util.Random;
 

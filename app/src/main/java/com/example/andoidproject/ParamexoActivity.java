@@ -4,21 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 
-import static android.graphics.Color.RED;
-
-public class Paramexo extends AppCompatActivity {
+public class ParamexoActivity extends AppCompatActivity {
     private ArrayList<String> listoperateurs = new ArrayList<>();
     private ArrayList<Integer> dizaines = new ArrayList<>();
     @Override
@@ -102,9 +96,9 @@ public class Paramexo extends AppCompatActivity {
                 dizaines.add(9);
                 dizaines.add(9);
                             }
-        Intent intent = new Intent(Paramexo.this, calcul.class);
-        intent.putExtra(calcul.PARAMETERS,listoperateurs);
-        intent.putExtra(calcul.DIZAINES,dizaines);
+        Intent intent = new Intent(ParamexoActivity.this, ExerciceCalculActivity.class);
+        intent.putExtra(ExerciceCalculActivity.PARAMETERS,listoperateurs);
+        intent.putExtra(ExerciceCalculActivity.DIZAINES,dizaines);
         startActivity(intent);}
     }
 

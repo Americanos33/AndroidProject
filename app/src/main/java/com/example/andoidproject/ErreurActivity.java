@@ -21,13 +21,7 @@ public class ErreurActivity extends AppCompatActivity {
         super.finish();
     }
     public void changertable(View view){
-        Intent intent = new Intent(this, Exercice5Activity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
-    }
-
-    public void changertheme(View view) {
-        Intent intent = new Intent(this, MenuActivity.class);
+        Intent intent = new Intent(this, TableMultiplicationActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
