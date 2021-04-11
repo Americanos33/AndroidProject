@@ -125,22 +125,12 @@
         android:layout_gravity="left"
         />
     <ToggleButton
+        android:id="@+id/timeon"
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:textOff="1min"
         android:textOn="1min"/>
-    <ToggleButton
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:textOff="2min"
-        android:textOn="2min"
-        />
-    <ToggleButton
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:textOff="3min"
-        android:textOn="3min"
-        />
+
 </LinearLayout>
 
     <Button

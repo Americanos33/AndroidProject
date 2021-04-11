@@ -50,6 +50,7 @@ public class ParamexoActivity extends AppCompatActivity {
     }
     public void continuercalcul(View view) {
         listoperateurs.clear();
+        boolean timer=false;
         //Les boutons des operateurs
         ToggleButton plsbtn = findViewById(R.id.pls);
         ToggleButton minbtn = findViewById(R.id.min);
@@ -60,6 +61,13 @@ public class ParamexoActivity extends AppCompatActivity {
         CheckBox dizaine2= findViewById(R.id.dizaine2);
         CheckBox centaine1= findViewById(R.id.centaine1);
         CheckBox centaine2= findViewById(R.id.centaine2);
+        //timer
+        ToggleButton timeon = findViewById(R.id.timeon);
+        if (timeon.isChecked()){
+            timer=true;
+        }
+
+
         if (dizaine1.isChecked()  && !centaine1.isChecked()){
             dizaines.add(99);
         }
@@ -99,6 +107,7 @@ public class ParamexoActivity extends AppCompatActivity {
         Intent intent = new Intent(ParamexoActivity.this, ExerciceCalculActivity.class);
         intent.putExtra(ExerciceCalculActivity.PARAMETERS,listoperateurs);
         intent.putExtra(ExerciceCalculActivity.DIZAINES,dizaines);
+        intent.putExtra(ExerciceCalculActivity.TIMER,timer);
         startActivity(intent);}
     }
 

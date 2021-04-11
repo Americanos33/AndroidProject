@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,17 +19,43 @@ import java.util.ArrayList;
 public class ExerciceCalculActivity extends AppCompatActivity {
     public static final String PARAMETERS="parameter_key";
     public static final String DIZAINES="dizaines_key";
+    public static final String TIMER="timer_key";
     private ArrayList<Integer> reponses = new ArrayList<>();
     private TableOperation operation;
+    private boolean istimer;
     int cnt;
     int cntrepj;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calcul);
+
+        TextView timer = findViewById(R.id.timer);
+
+
+         istimer = getIntent().getBooleanExtra(TIMER,false);
         int Maxop1 =getIntent().getIntegerArrayListExtra(DIZAINES).get(0);
         int Maxop2 =getIntent().getIntegerArrayListExtra(DIZAINES).get(1);
+        if (istimer== true){
+            operation = new TableOperation(getIntent().getStringArrayListExtra(PARAMETERS),Maxop1,Maxop2,true);
+              new CountDownTimer(30000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                timer.setText( millisUntilFinished / 1000 + "secondes" );
+
+            }
+
+            public void onFinish() {
+                Intent intent = new Intent(ExerciceCalculActivity.this, FelicitationExoActivity.class);
+                intent.putExtra(FelicitationExoActivity.SCORE_KEY, cntrepj);
+                startActivity(intent);
+            }
+        }.start();
+
+        } else {
         operation = new TableOperation(getIntent().getStringArrayListExtra(PARAMETERS),Maxop1,Maxop2);
+        }
         TextView calc = findViewById(R.id.calcul);
         Button btnp = findViewById(R.id.btnprec);
         TextView textcnt = findViewById(R.id.cnt);
@@ -36,7 +63,10 @@ public class ExerciceCalculActivity extends AppCompatActivity {
         btnp.setText("Retour");
         cnt=0;
         calc.setText(operation.getOperations().get(0).getOp1() + operation.getOperations().get(0).getOperande() + operation.getOperations().get(0).getOp2());
-        textcnt.setText(cnt+1 +"/10");
+        if (!istimer){
+            textcnt.setText(cnt+1 +"/10");
+        }
+
         cnt++;
     }
     public void opesuiv(View view) {
@@ -57,7 +87,10 @@ public class ExerciceCalculActivity extends AppCompatActivity {
                 btns.setText("Valider");
             }
             if (cnt < operation.getOperations().size()) {
-                textcnt.setText(cnt + 1 + "/10");
+                if (!istimer){
+                    textcnt.setText(cnt + 1 + "/10");
+                }
+
                 calc.setText(operation.getOperations().get(cnt).getOp1() + operation.getOperations().get(cnt).getOperande() + operation.getOperations().get(cnt).getOp2());
                     reponses.add(Integer.parseInt(String.valueOf(resinp.getText())));
                     reponses.set(cnt-1,Integer.parseInt(String.valueOf(resinp.getText())));
@@ -111,14 +144,15 @@ public class ExerciceCalculActivity extends AppCompatActivity {
             }else {
                 cntrepj--;
             }
-            textcnt.setText(cnt-1 +"/10");
+            if (!istimer){
+            textcnt.setText(cnt-1 +"/10");}
             cnt--;
         }
         else if (cnt == operation.getOperations().size()){
             calc.setText(operation.getOperations().get(cnt-2).getOp1() + operation.getOperations().get(cnt-1).getOperande() + operation.getOperations().get(cnt-2).getOp2());
             resinp.setText(String.valueOf(reponses.get(cnt-2)));
-            cntrepj--;
-            textcnt.setText(cnt-1 +"/10");
+            cntrepj--; if (!istimer){
+            textcnt.setText(cnt-1 +"/10");}
             cnt--;
 
         }
