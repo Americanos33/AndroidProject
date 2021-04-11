@@ -6,9 +6,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +36,12 @@ public class ExerciceCalculActivity extends AppCompatActivity {
 
         TextView timer = findViewById(R.id.timer);
 
+        // setting parameters of the timer textview
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.CENTER;
+
+        timer.setLayoutParams(params);
+
          istimer = getIntent().getBooleanExtra(TIMER,false);
         int Maxop1 =getIntent().getIntegerArrayListExtra(DIZAINES).get(0);
         int Maxop2 =getIntent().getIntegerArrayListExtra(DIZAINES).get(1);
@@ -42,7 +50,7 @@ public class ExerciceCalculActivity extends AppCompatActivity {
             t = new CountDownTimer(30000, 1000) {
 
             public void onTick(long millisUntilFinished) {
-                timer.setText( millisUntilFinished / 1000 + "secondes" );
+                timer.setText( millisUntilFinished / 1000 + " secondes" );
 
             }
 
